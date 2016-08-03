@@ -68,5 +68,5 @@ class AcmeHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
 
 if __name__ == '__main__':
 	httpd = SocketServer.TCPServer(('', 8000), AcmeHandler)
-	print 'serving at port', 8000
+	#print 'serving at port', 8000
 	httpd.serve_forever()
